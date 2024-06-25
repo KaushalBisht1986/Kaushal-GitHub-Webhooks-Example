@@ -1,4 +1,4 @@
-**Simple web service that listens for organization events to know when a issue has been created. When an issue is created this web service prints a message.**
+**Simple web service that listens for organization events to know when a issue has been created. When an issue is created this web service prints a message. Similar approach can be used to listen for organization events to know when a repository has been created and automate branch protection.**
 
 - When you create a webhook, you specify a URL and subscribe to event types. When an event that your webhook is subscribed to occurs (like repository creation, issue creation. etc.), GitHub will send an HTTP request with data about the event to the URL that you specified. If your server is set up to listen for webhook deliveries at that URL, it can take action when it receives one. Thisis an example how to write code to let your server listen for and respond to webhook deliveries. You can test your code by using your computer or codespace as a local server.
 
