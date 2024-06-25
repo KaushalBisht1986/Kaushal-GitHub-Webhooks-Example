@@ -1,4 +1,4 @@
-Print a message when a webhook delivery is received
+**Print a message when a webhook delivery is received (issue is opened or closed)**
 
 Webhook Proxy URL: https://smee.io/WjKD3YiGIn3KfYV
 To receive forwarded webhooks from smee.io, run the following command in your terminal: smee --url https://smee.io/WjKD3YiGIn3KfYV --path /webhook --port 3000
