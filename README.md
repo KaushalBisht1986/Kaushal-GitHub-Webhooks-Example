@@ -21,8 +21,6 @@
     - Ensure that the local service is running
     - Trigger your webhook i.e., create a new repository and select 'Add a ReadMe file'. This will create a new repository with main as default branch 
     - Navigate to your webhook proxy URL in command prompt where ngrok is running. You should see an event that corresponds to the event that you triggered (Example. POST / 200 OK). This indicates that GitHub successfully sent a webhook delivery to the payload URL that you specified and  forwarded your webhook to your local server.
-    - In the terminal window where you ran smee --url WEBHOOK_PROXY_URL --path /webhook --port 3000, you should see something like POST http://127.0.0.1:3000/webhook - 202. 
-This indicates that smee successfully forwarded your webhook to your local server.
     - In the terminal window where you ran local web service, you should see a message like "POST / HTTP/1.1" 200, which means POST request is successfully sent
     - Go the the repository that you just created on GitHub UI and you will notice a branch protection rule has been automatically added. You will also notice that Issue has been created mentioning 'A new branch protection was added to the main branch.'  
 - In both terminal windows, enter Ctrl+C to stop your local server and stop listening for forwarded webhooks.
