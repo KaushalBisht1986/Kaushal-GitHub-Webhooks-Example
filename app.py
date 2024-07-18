@@ -14,7 +14,7 @@ def webhook():
     payload = request.get_json()
     user = "KaushalBisht1986"
     # the password in prod env should come from parameter store
-    cred = "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"
+    cred = "xyz"
     
     print(payload)
     if payload is None:
